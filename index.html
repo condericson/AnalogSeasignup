@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AnalogSea</title>
+	<meta name="description" content="AnalogSea signup page">
+	<meta name="keywords" content="AnalogSea,signup,cloud">
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<img src="logo.png"> 
+
+	<form>
+		<header>Sign up</header>
+		
+		<!-- width for inputs is 320px including 2px border and 15px padding -->
+		<label for="email">Email</label>
+      	<input type="email" name='email' id='email' placeholder="foo@bar.com" required>
+      	
+      	<label for="password">Password</label>
+      	<input type="password" name='password' id='password' placeholder="1234passw0rd" required>
+      	
+      	<!-- width is 320px including 2px border and 15px padding, height is 55px including 2px border andn 5px padding -->
+      	<button type="submit" formmethod="post" formaction="/signup/">Sign up</button> 
+      	
+      	<a href="/forgot-password/new">Forgot password?</a> <!-- underlined -->
+
+	</form>	
+
+	<p>Already have an account? <a href="/login">Log in</a></p> <!-- log in is underlined -->
+
+</body>
+</html>
